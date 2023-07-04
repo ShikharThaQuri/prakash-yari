@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100%;
+}
+
+.dBox {
+  background: var(--box-color);
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 5px 10px;
+  position: relative;
+}
+
+.dBox::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: var(--box-color);
+  top: 20px;
+  transform: rotate(45deg);
+}
+
+.row1 .dBox::before {
+  right: -7px;
+}
+.row2 .dBox::before {
+  left: -7px;
+}
+
+.centerLine {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background-color: #fff;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+}

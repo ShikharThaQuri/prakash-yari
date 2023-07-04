@@ -1,0 +1,54 @@
+.firstChild {
+  transform: translateX(-450px);
+}
+
+.lastChild {
+  transform: translateX(450px);
+}
+
+.slideIn1 {
+  animation: anime 1.5s ease-out forwards;
+}
+.slideIn2 {
+  animation: anime 1.5s ease-out 0.1s forwards;
+}
+.slideIn3 {
+  animation: anime 1.5s ease-out 0.2s forwards;
+}
+.slideIn4 {
+  animation: anime 1s ease-out 0.7s forwards;
+}
+
+.slideInPhoto {
+  animation: animePhoto 1.5s ease-out forwards;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+
+  90% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes animePhoto {
+  0% {
+    opacity: 0;
+  }
+
+  90% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
